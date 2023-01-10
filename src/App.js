@@ -2,6 +2,7 @@ import React, { memo, useEffect, useState } from 'react';
 import './App.css';
 import Header from './layouts/Header';
 import MemoryCard from './components/MemoryCard';
+import Score from './components/Score';
 
 // Generate 16 unique cards
 // On click - register the card as clicked
@@ -114,12 +115,13 @@ function App() {
   
   return (
     <div>
-      <Header></Header>
+      <Header/>
       {
         childIds.map((id) => {
           return <MemoryCard key={id} id={id} clickHandler={clickHandler} img={memoryCards[id].img}/>
         })
       }
+      <Score currentScore={score.current} highScore={score.high}/>
     </div>
   );
 }
