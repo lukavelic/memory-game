@@ -1,8 +1,9 @@
 import React from "react";
+import './Score.css'
 
 const Score = (props) => {
     return (
-        <div>Current score: {props.currentScore} - High Score: {props.highScore}</div>
+        <div className="score-container">Current score: {props.currentScore} - High Score: {props.highScore}</div>
     )
 };
 

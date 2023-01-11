@@ -1,0 +1,8 @@
+.score-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+
+    font-weight: 600;
+
+}

@@ -1,9 +1,10 @@
 import React from "react";
+import './Header.css'
 
 const Header = () => {
 
     return (
-        <header>Memory Card Game</header>
+        <header>MEMORY</header>
     )
 }
 

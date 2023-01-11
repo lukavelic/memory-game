@@ -1,15 +1,13 @@
 import React from "react";
+import './MemoryCard.css'
 
 const MemoryCard = (props) => {
-
-    // console.log(props)
-
     const clickHandler = (e) => {
         props.clickHandler(e);
     }
 
     return (
-        <div id={props.id} onClick={clickHandler}>{props.img}</div>
+        <img className="card" src={props.img} id={props.id} onClick={clickHandler}/>
     )
 }
 

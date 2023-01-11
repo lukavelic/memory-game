@@ -1,0 +1,8 @@
+.card {
+    display: flex;
+    flex: auto;
+    max-width: 100%;
+
+    border-radius: 20px;
+    outline: 2px solid black;
+}
